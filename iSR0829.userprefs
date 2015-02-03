@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\CreateSegmentPrefab.cs">
+    <Files>
+      <File FileName="Assets\Scripts\AchievementBar.cs" Line="12" Column="31" />
+      <File FileName="Assets\Editor\CreateSegmentPrefab.cs" Line="26" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

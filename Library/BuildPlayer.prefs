@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Enabled</key>
+	<array>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+	</array>
+	<key>PathNames</key>
+	<array>
+		<string>Assets/Scenes/0-Splash.unity</string>
+		<string>Assets/Scenes/mainmenu.unity</string>
+		<string>Assets/Scenes/Tracks/track_1.unity</string>
+		<string>Assets/Scenes/Tracks/track_2.unity</string>
+		<string>Assets/Scenes/Tracks/track_3.unity</string>
+		<string>Assets/Scenes/Tracks/track_practice.unity</string>
+		<string>Assets/Scenes/TrackSelectMenu.unity</string>
+	</array>
+	<key>iPhone LastLocation</key>
+	<string>/Users/joaquin/Unity Projects/iSR0829/Unity Player</string>
+</dict>
+</plist>

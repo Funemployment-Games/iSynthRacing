@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a3a7e4219794d13bb756b2184271ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedModeObstacleColor: {r: .989044011, g: .177859157, b: .113588162, a: .75999999}
+  m_grandprixModeObstacleColor: {r: .883039594, g: .824170291, b: 0, a: .75999999}
+  m_endlessModeObstacleColor: {r: .822446048, g: .258472562, b: .88975358, a: .75999999}
+  m_speedModeResultsScreen: {fileID: 100008, guid: 0a2c531e48eac40de921f1356df34c48,
+    type: 2}
+  m_grandPrixModeResultsScreen: {fileID: 100008, guid: 0a2c531e48eac40de921f1356df34c48,
+    type: 2}
+  m_endlessModeResultsScreen: {fileID: 100008, guid: 0a2c531e48eac40de921f1356df34c48,
+    type: 2}
+  m_speedModeGUI: {fileID: 100002, guid: 9749dc50f760c43d0ac0a22b21a56e4b, type: 2}
+  m_grandPrixModeGUI: {fileID: 100002, guid: 9749dc50f760c43d0ac0a22b21a56e4b, type: 2}
+  m_endlessModeGUI: {fileID: 100002, guid: 9749dc50f760c43d0ac0a22b21a56e4b, type: 2}
+  m_countdownPrefab: {fileID: 100008, guid: d45750fc9fb9f4408b0799dd6286e806, type: 2}
+  speedLevelData:
+  - obstacleColor: {r: 0, g: 1, b: .800427258, a: .99000001}
+    tunnelColor: {r: .0273136497, g: .38295567, b: .379385054, a: 1}
+    topSpeed: 115
+  - obstacleColor: {r: .898008704, g: .832379639, b: .286839098, a: 1}
+    tunnelColor: {r: .717357159, g: .252857238, b: .494010836, a: .400000006}
+    topSpeed: 130
+  - obstacleColor: {r: .675089657, g: .808987558, b: 0, a: 1}
+    tunnelColor: {r: 0, g: .38194859, b: .162539095, a: .400000006}
+    topSpeed: 150
+  - obstacleColor: {r: .858884573, g: .785534441, b: .267658502, a: 1}
+    tunnelColor: {r: .55814451, g: .119417109, b: .066285193, a: .400000006}
+    topSpeed: 175
+  - obstacleColor: {r: 1, g: .254901975, b: .175860226, a: .400000006}
+    tunnelColor: {r: .164705887, g: .0784313753, b: .337254912, a: 1}
+    topSpeed: 205
+  - obstacleColor: {r: .409536898, g: .178927287, b: .865033925, a: 1}
+    tunnelColor: {r: 0, g: .404119939, b: .326878756, a: .600000024}
+    topSpeed: 240
+  - obstacleColor: {r: .0604715049, g: .467078656, b: .93002212, a: 1}
+    tunnelColor: {r: .0388494693, g: .157961398, b: .0423895642, a: 1}
+    topSpeed: 280
+  - obstacleColor: {r: 1, g: .350789666, b: .702586412, a: .400000006}
+    tunnelColor: {r: .402655065, g: 0, b: 0, a: .400000006}
+    topSpeed: 350
+  - obstacleColor: {r: 1, g: .986923039, b: .987548649, a: 1}
+    tunnelColor: {r: 1, g: .97383076, b: .975066781, a: 1}
+    topSpeed: 1e+06
+  m_retroBoostObstacleColor: {r: 1, g: 1, b: 1, a: .959999979}
+  m_retroBoostTunnelColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6

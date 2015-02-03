@@ -1,0 +1,128 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugSymbols>false</DebugSymbols>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProductVersion>8.0.30703</ProductVersion>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{1D5747D1-777B-412B-8BCB-9295999036F8}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>iSR</RootNamespace>
+        <AssemblyName>iSR</AssemblyName>
+        <WarningLevel>4</WarningLevel>
+        <StartupObject/>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+        <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral">
+            <HintPath>..\..\..\..\..\..\Applications\Unity iPhone\Unity iPhone.app\Contents\Frameworks\UnityEditor.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral">
+            <HintPath>..\..\..\..\..\..\Applications\Unity iPhone\Unity iPhone.app\Contents\Frameworks\UnityEngine.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets"/>
+    <ItemGroup>
+        <Compile Include="AchievementBar.cs"/>
+        <Compile Include="BoostBar.cs"/>
+        <Compile Include="BoostButton.cs"/>
+        <Compile Include="Button.cs"/>
+        <Compile Include="ChaseCamera.cs"/>
+        <Compile Include="ComboSystem.cs"/>
+        <Compile Include="CountdownObject.cs"/>
+        <Compile Include="DontDestroyObjects.cs"/>
+        <Compile Include="EndlessModeGUI.cs"/>
+        <Compile Include="EndlessModeResultsScreen.cs"/>
+        <Compile Include="EnginePlane.cs"/>
+        <Compile Include="GameManager.cs"/>
+        <Compile Include="GameMetrics.cs"/>
+        <Compile Include="GhostManager.cs"/>
+        <Compile Include="GhostShip.cs"/>
+        <Compile Include="GrandPrixModeGUI.cs"/>
+        <Compile Include="GrandPrixModeResultsScreen.cs"/>
+        <Compile Include="GUITouchController.cs"/>
+        <Compile Include="InputManager.cs"/>
+        <Compile Include="iPhoneController.cs"/>
+        <Compile Include="IphoneController.cs"/>
+        <Compile Include="LoadingScreen.cs"/>
+        <Compile Include="MainMenu.cs"/>
+        <Compile Include="MainMenuShip.cs"/>
+        <Compile Include="Menu.cs"/>
+        <Compile Include="Menu.cs"/>
+        <Compile Include="Menu.cs"/>
+        <Compile Include="MenuManager.cs"/>
+        <Compile Include="Misc\AutoRotate.cs"/>
+        <Compile Include="Misc\CombineChildren.cs"/>
+        <Compile Include="Misc\EnableRendererOnChildren.cs"/>
+        <Compile Include="Misc\FPSCounter.cs"/>
+        <Compile Include="Misc\LookAtTarget.cs"/>
+        <Compile Include="Misc\MeshCombineUtility.cs"/>
+        <Compile Include="Misc\Profiler\JCsLibrary\GenericScripts\JCsProfiler.cs"/>
+        <Compile Include="Misc\Profiler\JCsLibrary\GenericScripts\JCsProfilerClasses\PerformanceCounter.cs"/>
+        <Compile Include="Misc\Profiler\JCsLibrary\GenericScripts\JCsProfilerClasses\PerformanceCounterClass.cs"/>
+        <Compile Include="Misc\Profiler\JCsLibrary\GenericScripts\JCsProfilerClasses\PerformanceCounterInstance.cs"/>
+        <Compile Include="Misc\Profiler\JCsLibrary\GenericScripts\JCsProfilerMethod.cs"/>
+        <Compile Include="Misc\Profiler\ProfilingExample.cs"/>
+        <Compile Include="Misc\ReplaceChildren.cs"/>
+        <Compile Include="Misc\UtilAverage.cs"/>
+        <Compile Include="ModeSelectButtonManager.cs"/>
+        <Compile Include="ModeSelectMenu.cs"/>
+        <Compile Include="MusicManager.cs"/>
+        <Compile Include="Obstacle.cs"/>
+        <Compile Include="ObstaclePart.cs"/>
+        <Compile Include="Options\CalibrateButton.cs"/>
+        <Compile Include="Options\CreditsButton.cs"/>
+        <Compile Include="Options\CreditsScreen.cs"/>
+        <Compile Include="Options\DoneButton.cs"/>
+        <Compile Include="Options\MainMenuButton.cs"/>
+        <Compile Include="Options\OptionsInvertXButtonManager.cs"/>
+        <Compile Include="Options\OptionsInvertYButtonManager.cs"/>
+        <Compile Include="Options\OptionsMenu.cs"/>
+        <Compile Include="Options\OptionsMusicButtonManager.cs"/>
+        <Compile Include="Options\OptionsSensitivityButtonManager.cs"/>
+        <Compile Include="Options\OptionsSoundButtonManager.cs"/>
+        <Compile Include="OptionsDialog.cs"/>
+        <Compile Include="PauseButton.cs"/>
+        <Compile Include="Pickup.cs"/>
+        <Compile Include="Player.cs"/>
+        <Compile Include="PlayerBoost.cs"/>
+        <Compile Include="PlayerCollision.cs"/>
+        <Compile Include="PlayerCycleColors.cs"/>
+        <Compile Include="PlayerGUI.cs"/>
+        <Compile Include="PlayerRetroBoost.cs"/>
+        <Compile Include="PlayerRoll.cs"/>
+        <Compile Include="PlayerTilt.cs"/>
+        <Compile Include="ResultsContinueButton.cs"/>
+        <Compile Include="ResultsRetryButton.cs"/>
+        <Compile Include="RetroBoostButton.cs"/>
+        <Compile Include="RollButton.cs"/>
+        <Compile Include="Segment.cs"/>
+        <Compile Include="SegmentManager.cs"/>
+        <Compile Include="SelectButton.cs"/>
+        <Compile Include="SelectButtonManager.cs"/>
+        <Compile Include="SoundManager.cs"/>
+        <Compile Include="SpeedModeGUI.cs"/>
+        <Compile Include="SpeedModeResultsScreen.cs"/>
+        <Compile Include="SplashReadyButton.cs"/>
+        <Compile Include="TiltButton.cs"/>
+        <Compile Include="Track.cs"/>
+        <Compile Include="TrackSelectButtonManager.cs"/>
+        <Compile Include="TrackSelectMenu.cs"/>
+    </ItemGroup>
+</Project>

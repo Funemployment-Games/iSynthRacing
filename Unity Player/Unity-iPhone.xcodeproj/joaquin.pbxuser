@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Unity-iPhone */ = {
+		activeExec = 0;
+		executables = (
+			D2D141A2106753CD0042039A /* Unity-iPhone */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = D2D141A2106753CD0042039A /* Unity-iPhone */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Unity-iPhone */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Unity-iPhone */,
+		);
+		codeSenseManager = D2D141C0106753D10042039A /* Code sense */;
+		executables = (
+			D2D141A2106753CD0042039A /* Unity-iPhone */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					476,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 275460076;
+			PBXWorkspaceStateSaveDate = 275460076;
+		};
+		perUserProjectItems = {
+			D279CAD5106B317900F9D451 /* PlistBookmark */ = D279CAD5106B317900F9D451 /* PlistBookmark */;
+			D279CAD7106B317900F9D451 /* PlistBookmark */ = D279CAD7106B317900F9D451 /* PlistBookmark */;
+			D279CAD8106B317900F9D451 /* PlistBookmark */ = D279CAD8106B317900F9D451 /* PlistBookmark */;
+			D279CAE0106B3B6E00F9D451 /* PlistBookmark */ = D279CAE0106B3B6E00F9D451 /* PlistBookmark */;
+			D279CAE1106B3B6E00F9D451 /* PBXTextBookmark */ = D279CAE1106B3B6E00F9D451 /* PBXTextBookmark */;
+			D279CAE3106B3B6E00F9D451 /* PlistBookmark */ = D279CAE3106B3B6E00F9D451 /* PlistBookmark */;
+			D279CAE4106B3B6E00F9D451 /* PBXTextBookmark */ = D279CAE4106B3B6E00F9D451 /* PBXTextBookmark */;
+		};
+		sourceControlManager = D2D141BF106753D10042039A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	D279CAD5106B317900F9D451 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIPrerenderedIcon,
+		);
+		name = "/Users/joaquin/Unity Projects/iSR0829/Unity Player/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D279CAD7106B317900F9D451 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIPrerenderedIcon,
+		);
+		name = "/Users/joaquin/Unity Projects/iSR0829/Unity Player/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D279CAD8106B317900F9D451 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIPrerenderedIcon,
+		);
+		name = "/Users/joaquin/Unity Projects/iSR0829/Unity Player/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D279CAE0106B3B6E00F9D451 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = D279CAD1106B30A500F9D451 /* dist.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			"get-task-allow",
+		);
+		name = "/Users/joaquin/Unity Projects/iSR0829/Unity Player/dist.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D279CAE1106B3B6E00F9D451 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D279CAE2106B3B6E00F9D451 /* MidiParser.java */;
+		rLen = 0;
+		rLoc = 2147483647;
+		rType = 0;
+	};
+	D279CAE2106B3B6E00F9D451 /* MidiParser.java */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.java;
+		name = MidiParser.java;
+		path = "/Users/joaquin/Downloads/pjlmidiparser-1-1/src/com/planetj/midi/parser/MidiParser.java";
+		sourceTree = "<absolute>";
+	};
+	D279CAE3106B3B6E00F9D451 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = D279CAD1106B30A500F9D451 /* dist.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			"get-task-allow",
+		);
+		name = "/Users/joaquin/Unity Projects/iSR0829/Unity Player/dist.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	D279CAE4106B3B6E00F9D451 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D279CAE5106B3B6E00F9D451 /* MidiParser.java */;
+		name = "MidiParser.java: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 460;
+		vrLoc = 0;
+	};
+	D279CAE5106B3B6E00F9D451 /* MidiParser.java */ = {
+		isa = PBXFileReference;
+		name = MidiParser.java;
+		path = "/Users/joaquin/Downloads/pjlmidiparser-1-1/src/com/planetj/midi/parser/MidiParser.java";
+		sourceTree = "<absolute>";
+	};
+	D2D141A2106753CD0042039A /* Unity-iPhone */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Unity-iPhone";
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	D2D141BF106753D10042039A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	D2D141C0106753D10042039A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
