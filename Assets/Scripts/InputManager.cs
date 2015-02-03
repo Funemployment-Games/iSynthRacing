@@ -14,6 +14,7 @@ public class InputManager : MonoBehaviour
 	
 	void Awake()
 	{
+		print("Awake - InputManager");
 		if( m_singleton != null )
 		{
 			return;
@@ -78,10 +79,12 @@ public class InputManager : MonoBehaviour
 		}
 		else //in menu
 		{
+			/*
 			if(OptionsMenu.active || MainMenu.active)
 			{
 				UpdateAccelerometer2();
 			}
+*/
 		}
 	//	pm.CallIsFinished();
 	}

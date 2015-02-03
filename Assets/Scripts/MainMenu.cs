@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MainMenu : Menu
@@ -8,45 +9,44 @@ public class MainMenu : Menu
 	bool m_loadOnNextUpdate = false;
 	float m_timeToLoad;
 	
-	public GameObject m_instructionsScreen;
-	public GUITexture m_calibrationShip;
+	//public GameObject m_instructionsScreen;
+	public Image m_calibrationShip;
 	public Vector2 m_calibrationShipUpLeft;
 	public Vector2 m_calibrationShipDownRight;
 	Vector3 m_calibrationShipPos;
 	
-	static public bool active = false;
+	//static public bool active = false;
 	public static int m_racersOnline = 0;
-	
-	public GUIText m_racersOnlineText;
+
+	public GameObject objectRacersOnlineText;
+	public GameObject objectAntiPiracyText;
+	private Text m_textRacersOnline;
+	private Text m_textAntiPiracy;
 	
 	MainMenuShip m_ship;
 	
 	void Awake()
 	{
-		GameMetrics.LoadAchievements();
-		GameMetrics.SaveAchievements();
+		print("Awake - MainMenu");
+		//GameMetrics.LoadAchievements();
+		//GameMetrics.SaveAchievements();
 		
-		OptionsMenu.LoadPlayerPrefs();
+		//OptionsMenu.LoadPlayerPrefs();
 		
 		GameMetrics.activeGameMode = GameMode.None;
 		GameMetrics.selectedTrack = 0;
 	}
 	
-	protected virtual void Start()
+	protected override void Start()
 	{
-		Object[] objs = GameObject.FindObjectsOfType(typeof(Transform));
-		
-	//	print("FOUND GAMEOBJECTS ------------------"+objs.Length);
-	//	foreach (Transform obj in objs)
-	//	{
-	//		print(obj.name);
-	//	}print("FOUND GAMEOBJECTS ------------------");
+		m_textRacersOnline = objectRacersOnlineText.GetComponentInChildren<Text>();
+		m_textAntiPiracy = objectAntiPiracyText.GetComponentInChildren<Text>();
 		
 		MenuManager.DisableLoadingScreen();
 		
 		m_calibrationShipPos = (m_calibrationShipUpLeft+m_calibrationShipDownRight)/2;
 		
-		if(m_racersOnlineText)
+		if(m_textRacersOnline)
 		{
 			if(m_racersOnline == 0)
 			{
@@ -56,10 +56,10 @@ public class MainMenu : Menu
 			{
 				m_racersOnline += Random.Range(-500,400);
 			}
-			m_racersOnlineText.text = "Racers Online: "+m_racersOnline.ToString();
+			m_textRacersOnline.text = "Racers Online: "+m_racersOnline.ToString();
 		}
 		
-		active = true;
+		//active = true;
 		
 	//	SetShipTexture(GameMetrics.selectedShip);
 		
@@ -78,16 +78,13 @@ public class MainMenu : Menu
 		MusicManager.Init();
 	}
 	
-	void OnMainMenuPlayButton()
+	public void OnMainMenuPlayButton()
 	{
 		//	// PIRACY CHECK
-		if(!iPhoneUtils.isApplicationGenuine)
+		if(!Application.genuine)
 		{
-			GameObject go = GameObject.Find("MessageForPirates");
-			if(go)
-			{
-				go.guiText.enabled = true;
-			}
+			m_textAntiPiracy.enabled = true;
+
 			return;
 		}
 		
@@ -106,7 +103,7 @@ public class MainMenu : Menu
 		m_timeToLoad = 0.1f;
 	}
 	
-	void OnMainMenuOptionsButton()
+	public void OnMainMenuOptionsButton()
 	{
 	//	m_loadingScreen.guiTexture.enabled = true;
 	
@@ -115,7 +112,7 @@ public class MainMenu : Menu
 	//	m_loadOnNextUpdate = true;
 	}
 	
-	void OnMainMenuPracticeButton()
+	public void OnMainMenuPracticeButton()
 	{
 		GameMetrics.activeGameMode = GameMode.Speed;
 		GameMetrics.selectedTrack = 4;
@@ -129,12 +126,12 @@ public class MainMenu : Menu
 		m_loadOnNextUpdate = true;
 	}
 	
-	void OnMainMenuInstructionsButton()
+	public void OnMainMenuInstructionsButton() 
 	{
 	//	m_instructionsScreen.SetActiveRecursively(!m_instructionsScreen.active);
 	}
 	
-	void OnMainMenuLeftArrowPressed()
+	public void OnMainMenuShipSelectButton()
 	{
 	//	if(m_ship.isInTransition || m_ship.shipCount == 0) return;
 		GameMetrics.selectedShip--;
@@ -144,12 +141,12 @@ public class MainMenu : Menu
 
 	}
 	
-	void OnCalibrateButtonPressed()
+	public void OnCalibrateButtonPressed()
 	{
-		InputManager.CalibrateNow();
+		//InputManager.CalibrateNow();
 	}
 	
-	void OnMainMenuRightArrowPressed()
+	public void OnMainMenuColorSelectButton()
 	{
 		m_ship.SetNextTexture();
 	}
@@ -167,7 +164,7 @@ public class MainMenu : Menu
 			m_timeToLoad -= Time.deltaTime;
 			if(m_timeToLoad > 0) return;
 			
-			active = false;
+			//active = false;
 			m_loadOnNextUpdate = false;
 			Application.LoadLevel(m_levelToLoad);
 			return;
@@ -180,8 +177,8 @@ public class MainMenu : Menu
 	{
 		if(m_calibrationShip)
 		{
-			float x = InputManager.normalizedRoll;
-			float y = InputManager.normalizedTilt;
+			float x = 0.0f;//InputManager.normalizedRoll;
+			float y = 0.0f;//InputManager.normalizedTilt;
 			
 			Vector3 targetShipPos = new Vector3();
 			targetShipPos.x = Mathf.Lerp(m_calibrationShipUpLeft.x, m_calibrationShipDownRight.x, x);

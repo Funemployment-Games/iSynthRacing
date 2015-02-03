@@ -110,6 +110,7 @@ Transform:
   - {fileID: 400012}
   - {fileID: 400014}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1002 &400005
 EditorExtensionImpl:
   serializedVersion: 6
@@ -124,6 +125,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400004}
+  m_RootOrder: 0
 --- !u!1002 &400007
 EditorExtensionImpl:
   serializedVersion: 6
@@ -138,6 +140,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
+  m_RootOrder: 1
 --- !u!1002 &400009
 EditorExtensionImpl:
   serializedVersion: 6
@@ -152,6 +155,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400004}
+  m_RootOrder: 2
 --- !u!1002 &400013
 EditorExtensionImpl:
   serializedVersion: 6
@@ -166,6 +170,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400004}
+  m_RootOrder: 3
 --- !u!1002 &400015
 EditorExtensionImpl:
   serializedVersion: 6
@@ -211,7 +216,7 @@ GUITexture:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: 27bacb0752ebb436a8bbc9b7cfb0f391, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -257,7 +262,7 @@ GUIText:
   m_GameObject: {fileID: 100012}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Remember the code " 5 stars "
+  m_Text: "You can re-calibrate at any \ntime by going to the pause \nmenu"
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}

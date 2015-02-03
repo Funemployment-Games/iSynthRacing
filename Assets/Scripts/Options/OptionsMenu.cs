@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class OptionsMenu : Menu
@@ -16,6 +17,7 @@ public class OptionsMenu : Menu
 	
 	void Awake()
 	{
+		print("Awake - OptionsMenu");
 		if( m_instance != null )
 		{
 			return;
@@ -30,14 +32,7 @@ public class OptionsMenu : Menu
 	///
 	///
 	///
-	
-	public static bool active = false;
-	public static bool isActive{
-		get{
-			return active;
-		}
-	}
-	
+
 	///
 	///
 	static OnOffSetting m_invertX = OnOffSetting.Off;
@@ -50,7 +45,7 @@ public class OptionsMenu : Menu
 	///
 	///
 	
-	public GUITexture m_calibrationShip;
+	public Image m_calibrationShip;
 //	public Vector2 m_calibrationShipCenter;
 	public Vector2 m_calibrationShipUpLeft;
 	public Vector2 m_calibrationShipDownRight;
@@ -58,7 +53,7 @@ public class OptionsMenu : Menu
 	
 	public GameObject m_creditsScreen;
 	
-	void Start()
+	protected override void Start()
 	{
 		Init();
 	}
@@ -189,8 +184,7 @@ public class OptionsMenu : Menu
 	public void OpenMenu()
 	{
 		LoadPlayerPrefs();
-		
-		gameObject.SetActiveRecursively(true);
+
 		active = true;
 		
 		ShowCredits(false);
@@ -199,9 +193,7 @@ public class OptionsMenu : Menu
 	public void CloseMenu()
 	{
 		SavePlayerPrefs();
-		
-		gameObject.SetActiveRecursively(false);
-		
+			
 		active = false;
 	}
 	
@@ -209,7 +201,7 @@ public class OptionsMenu : Menu
 	{
 		if(instance.m_creditsScreen)
 		{
-			instance.m_creditsScreen.SetActiveRecursively(show);
+			//instance.m_creditsScreen.SetActiveRecursively(show);
 		}
 	}
 }

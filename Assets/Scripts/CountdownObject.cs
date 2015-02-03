@@ -30,7 +30,7 @@ public class CountdownObject : MonoBehaviour
 	{
 		if(!m_active) return;
 		
-		if(OptionsMenu.isActive) return;
+		//if(OptionsMenu.isActive) return;
 		
 		if(m_remainingTime <= 0f)
 		{

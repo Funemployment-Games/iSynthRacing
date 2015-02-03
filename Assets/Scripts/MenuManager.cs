@@ -125,7 +125,7 @@ public class MenuManager : MonoBehaviour
 	
 	public static void LoadMainMenu(bool showLoading)
 	{
-		InputManager.Shutdown();
+		//InputManager.Shutdown();
 		MusicManager.Shutdown();
 		SoundManager.Shutdown();
 		
